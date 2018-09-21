@@ -89,9 +89,9 @@ def TreyBot():
 
         # Check if we hit 50
         if n == target:
-            return "TreyBot: I did it! n = {}!!! Achieved in {} tries".format(target, i)
+            return "TreyBot: I did it! n = {}!!! Achieved in {} tries".format(target, i + 1)
     return "TreyBot: I failed! {} tries reached. " \
-           "My number is {} and I didnt get to target number {}".format(i, n, target)
+           "My number is {} and I didnt get to target number {}".format(i + 1, n, target)
 
 
 print(TreyBot())
