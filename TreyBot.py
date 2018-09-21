@@ -9,7 +9,7 @@
 import logging, random
 
 # Logging configuration
-logging.basicConfig(filename='ai_reach_50_log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='TreyBot_Log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info('Starting Program...')
 
 
@@ -76,10 +76,11 @@ def TreyBot():
 
         # Check which number is closest to 50
         closer = min([compare,n], key=lambda x: abs(x-target))
-        # Uncomment these if you want to watch the program try different numbers
-        # print("n is {}".format(n))
-        # print("compare is {}".format(compare))
-        # print("closer is {}".format(closer))
+
+        # Debug logs to track the number comparison
+        logging.debug("n is {}".format(n))
+        logging.debug("compare is {}".format(compare))
+        logging.debug("closer is {}".format(closer))
 
         # If it makes use closer to 50 than before, give that function a point/ add it to the list
         if n == closer:
