@@ -10,3 +10,5 @@ Update[1/8/2019]: I've now learned how OOP actually works and I can say for cert
 However, the program does work!  If I were to rewrite it, instead of making each operation its own "Class", i'd instead make one "TreyBot" class, with the required methods contained within it.  Since, you know, that's sort of the whole point of OOP. 
 
 In any case, this was a lot of fun to make and does work. For now i'm leaving it as is so that I can look back and document how i've improved over time.  Sort of how TreyBot does. :) 
+
+If you'd like to follow along with me learning how to use objects and classes appropriately, head over to https://github.com/hbreauxv/Learning-OOP-with-Python
